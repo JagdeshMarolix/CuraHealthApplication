@@ -13,8 +13,6 @@ public class Utils  {
 	public static void GetScreenShot(String Method, WebDriver driver) throws Throwable, Throwable {
 		File file1 = new File(Method);
 		FileUtils.copyFile(((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE), file1);
-		
-		
 	}
 
 }
